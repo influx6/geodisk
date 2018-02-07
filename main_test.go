@@ -11,8 +11,8 @@ import (
 
 	"bytes"
 	"io/ioutil"
+	"log"
 
-	"github.com/containous/traefik/log"
 	"github.com/influx6/faux/tests"
 )
 
