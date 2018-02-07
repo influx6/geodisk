@@ -210,18 +210,14 @@ func geoDistanceWithCSV(ctx flags.Context) error {
 	var top5, bottom5 []GeoRecord
 
 	recLen := len(records)
-	if recLen < 5 {
+	if recLen <= 5 {
 		top5 = records
 		bottom5 = records
 	}
 
 	if recLen > 5 {
 		top5 = records[:5]
-		bottom5 = records[5:]
-
-		if len(bottom5) > 5 {
-			bottom5 = bottom5[:5]
-		}
+		bottom5 = records[recLen-5:]
 	}
 
 	fmt.Fprintln(os.Stdout, "Top 5 Locations closest to Housing Anywhere:")
