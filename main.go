@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	earthRadius                 = 6371 // in meters
+	earthRadius                 = 6371 // in kilometers
 	housingAnywhereGeoLatitude  = 51.925146
 	housingAnywhereGeoLongitude = 4.478617
 )
