@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "yMtRtR7uotNm/tDmdthIn9RMOQ4=",
+			"path": "github.com/influx6/faux/bag",
+			"revision": "c16965953e587110a36f3810db953698e63e46cd",
+			"revisionTime": "2018-01-25T11:17:31Z"
+		},
+		{
+			"checksumSHA1": "QtUs33miKSK95tDeQR3ao0qMyDc=",
+			"path": "github.com/influx6/faux/flags",
+			"revision": "c16965953e587110a36f3810db953698e63e46cd",
+			"revisionTime": "2018-01-25T11:17:31Z"
+		},
+		{
+			"checksumSHA1": "/PE0RGwoNeVkhlVKWxnIt0TgAA4=",
+			"path": "github.com/influx6/faux/tests",
+			"revision": "c16965953e587110a36f3810db953698e63e46cd",
+			"revisionTime": "2018-01-25T11:17:31Z"
+		}
+	],
+	"rootPath": "github.com/influx6/geodisk"
+}

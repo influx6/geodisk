@@ -67,3 +67,8 @@ See `csv help` for more info:
 ```
 
 
+## Vendor
+
+Vendoring is done with [GoVendor](https://github.com/kardianos/govendor).
+
+
