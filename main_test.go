@@ -116,7 +116,7 @@ func TestGeoDisk_distanceWithCSVReader(t *testing.T) {
 				expected.ID = "382582"
 				expected.Lat = 0.6488587382166852
 				expected.Long = -0.0629871350153458
-				expected.Dist = 6695.821593686801
+				expected.Dist = 1758.0806131200138
 
 				if !reflect.DeepEqual(records[0], expected) {
 					tests.Info("Received: %#v", records[0])
@@ -132,8 +132,8 @@ func TestGeoDisk_distanceWithCSVReader(t *testing.T) {
 		tests.Info("Task: %q", task.Title)
 		records, readErr := distanceWithCSVReader(
 			task.Reader,
-			housingAnywhereGeoLongitudeRadians,
 			housingAnywhereGeoLatitudeRadians,
+			housingAnywhereGeoLongitudeRadians,
 		)
 		if readErr != nil {
 			if task.CheckErr == nil {
