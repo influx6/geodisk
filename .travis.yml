@@ -1,0 +1,20 @@
+language: go
+
+go:
+  - 1.9
+
+before_script:
+after_script:
+script:
+
+jobs:
+ include:
+  - stage: coverage
+    script: go test -cover ./
+  - stage: test
+    script: go test -v
+  - stage: benchmarks
+    script: go test -run=xXX -bench=.
+  - stage: deploy
+    script: echo "do nothing... :)"
+
