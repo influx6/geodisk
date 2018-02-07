@@ -43,19 +43,20 @@ To generate closest and farthest locations from HousingAnywhere through a CSV fi
 ```bash
 >  go run main.go csv ./static/geoData.csv 
 
-  Top 5 Locations closest to Housing Anywhere:
-  	LocationID: 442406 (0.333838 kilometers)
-  	LocationID: 285782 (0.528032 kilometers)
-  	LocationID: 429151 (0.648010 kilometers)
-  	LocationID: 512818 (0.740553 kilometers)
-  	LocationID: 25182 (0.821642 kilometers)
-  
-  Top 5 Locations farthest to Housing Anywhere:
-  	LocationID: 50356 (0.898048 kilometers)
-  	LocationID: 28403 (0.922231 kilometers)
-  	LocationID: 254577 (1.107798 kilometers)
-  	LocationID: 201792 (1.121867 kilometers)
-  	LocationID: 12533 (1.446712 kilometers)
+Top 5 Locations closest to Housing Anywhere:
+	LocationID: 442406 (0.333838 kilometers)
+	LocationID: 285782 (0.528032 kilometers)
+	LocationID: 429151 (0.648010 kilometers)
+	LocationID: 512818 (0.740553 kilometers)
+	LocationID: 25182 (0.821642 kilometers)
+
+Top 5 Locations farthest to Housing Anywhere:
+	LocationID: 382693 (1441.719154 kilometers)
+	LocationID: 382582 (1758.080613 kilometers)
+	LocationID: 381823 (1758.848270 kilometers)
+	LocationID: 382013 (1810.117976 kilometers)
+	LocationID: 7818 (8776.646278 kilometers)
+
 ```
 
 
