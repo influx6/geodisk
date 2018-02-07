@@ -69,7 +69,7 @@ type GeoRecord struct {
 	Dist float64
 }
 
-// distanceWithCSVFile attempts to load csv file from provided target
+// distanceWithCSVFile attempts to load csv file from provided target path
 // calculating distance of each record from giving geo-coordinates of
 // latitude and longitude pairs (which must be in radians).
 func distanceWithCSVFile(target string, targetLat float64, targetLong float64) ([]GeoRecord, error) {
@@ -83,7 +83,7 @@ func distanceWithCSVFile(target string, targetLat float64, targetLong float64) (
 	return distanceWithCSVReader(bufio.NewReader(targetFile), targetLat, targetLong)
 }
 
-// distanceWithCSVReader attempts to load csv data from from provided io.Reader,
+// distanceWithCSVReader attempts to load csv data from provided io.Reader,
 // calculating distance of each record from giving geo-coordinates of
 // latitude and longitude pairs (which must be in radians).
 //
